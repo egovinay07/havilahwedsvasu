@@ -10,9 +10,9 @@ export const Header: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     try {
       const saved = localStorage.getItem('weddingTheme');
-      return (saved === 'light' || saved === 'dark') ? saved : 'dark';
+      return (saved === 'light' || saved === 'dark') ? saved : 'light';
     } catch {
-      return 'dark';
+      return 'light';
     }
   });
 
