@@ -83,6 +83,39 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
                   Pic : Friends Foundation, Hyderabad · 16 February 2026
                 </p>
               </div>
+
+              {/* Sisters' Reception Invitation Card - Fills red circled area */}
+              <div className="mt-3.5 p-3 sm:p-3.5 rounded-xl bg-gradient-to-br from-rose/10 via-cream-soft/60 to-olive/10 dark:from-midnight-elevated/80 dark:via-midnight-card dark:to-midnight-elevated/80 border border-rose/25 dark:border-midnight-border text-center shadow-xs">
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-rose/15 dark:bg-champagne/15 border border-rose/30 dark:border-champagne/40 text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-widest text-rose dark:text-champagne mb-1.5">
+                  <Sparkles className="w-3 h-3" />
+                  <span>Sisters of the Bride</span>
+                  <Sparkles className="w-3 h-3" />
+                </div>
+                <p className="font-serif italic text-xs text-plum dark:text-darktext-primary font-medium leading-snug mb-2">
+                  Warmly inviting you with love &amp; joy to the Wedding Reception!
+                </p>
+                <div className="grid grid-cols-4 gap-1.5 mb-2">
+                  {[
+                    'Jemima',
+                    'Hepsiba',
+                    'Nikitha',
+                    'Swathi',
+                    'Shruthi',
+                    'Swapna',
+                    'Little',
+                    'Bhanu',
+                  ].map((name) => (
+                    <div
+                      key={name}
+                      className="px-1.5 py-1 rounded-lg bg-white/90 dark:bg-midnight/90 border border-rose/20 dark:border-midnight-border shadow-xs text-center hover:border-rose/50 transition-colors"
+                    >
+                      <span className="font-serif font-bold text-[0.72rem] sm:text-xs text-plum dark:text-darktext-primary block truncate">
+                        {name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Bottom Fellowship Blessing - Eliminates empty space and balances Column 2 */}
@@ -98,35 +131,36 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
           </div>
 
           {/* COLUMN 2: THE BRIDE'S NOTE (Beside the photo) */}
-          <div className="lg:col-span-6 flex flex-col justify-between p-5 sm:p-8 rounded-2xl bg-white/80 dark:bg-midnight-card/90 border border-rose/20 dark:border-midnight-border shadow-sm text-center">
-            <div>
+          <div className="lg:col-span-6 flex flex-col justify-between p-6 sm:p-8 rounded-2xl bg-white/80 dark:bg-midnight-card/90 border border-rose/20 dark:border-midnight-border shadow-sm text-center">
+            <div className="flex-1 flex flex-col justify-between py-1">
               {/* Note Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/25 dark:border-champagne/35 text-[0.68rem] font-bold uppercase tracking-widest text-rose dark:text-champagne mb-3">
-                <Heart className="w-3 h-3 fill-current text-rose dark:text-champagne" />
-                <span className="font-hobo text-xs sm:text-sm tracking-wide normal-case text-rose dark:text-champagne font-normal">Friends Foundation</span>
-                <span className="opacity-40">·</span>
-                <span>A Special Note from the Bride</span>
+              <div className="mb-2">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/25 dark:border-champagne/35 text-[0.68rem] font-bold uppercase tracking-widest text-rose dark:text-champagne">
+                  <Heart className="w-3 h-3 fill-current text-rose dark:text-champagne" />
+                  <span>Friends Foundation</span>
+                  <span className="opacity-40">·</span>
+                  <span>A Special Note from the Bride</span>
+                </div>
               </div>
 
-              {/* Sacred Cross */}
-              <div className="text-rose dark:text-champagne text-2xl font-serif mb-1" aria-hidden="true">
-                ✝
+              {/* Sacred Cross & Note Title */}
+              <div className="my-1.5">
+                <div className="text-rose dark:text-champagne text-2xl font-serif mb-1" aria-hidden="true">
+                  ✝
+                </div>
+                <h4 className="font-serif text-xl sm:text-2xl md:text-[1.65rem] font-bold text-plum dark:text-darktext-primary leading-snug">
+                  From FF Home to a New Home, By God's Grace! ❤️
+                </h4>
+                <div className="w-14 h-[1.5px] bg-rose/40 dark:bg-champagne/40 mx-auto mt-2.5" />
               </div>
-
-              {/* Note Title */}
-              <h4 className="font-serif text-xl sm:text-2xl font-bold text-plum dark:text-darktext-primary mb-3">
-                From FF Home to a New Home, By God's Grace! ❤️
-              </h4>
-
-              <div className="w-12 h-[1px] bg-rose/40 dark:bg-champagne/40 mx-auto mb-4" />
 
               {/* Note Text */}
-              <div className="font-serif text-sm sm:text-base leading-relaxed text-plum-muted dark:text-darktext-secondary space-y-3 text-center sm:text-left">
-                <p className="italic font-medium text-plum dark:text-darktext-primary text-center">
+              <div className="font-serif text-base sm:text-[1.05rem] leading-relaxed text-plum-muted dark:text-darktext-secondary space-y-4 text-center max-w-lg mx-auto my-2">
+                <p className="italic font-medium text-plum dark:text-darktext-primary text-base sm:text-lg">
                   “A little girl who grew up surrounded by love, care, and prayers is now stepping into a beautiful new chapter of life.”
                 </p>
                 <p>
-                  As the eldest girl of <span className="font-hobo tracking-wide text-rose dark:text-champagne font-normal text-base sm:text-lg">Friends Foundation</span>, it is a special blessing to celebrate the 7th wedding from FF Home.
+                  As the eldest girl of <span className="font-semibold text-rose dark:text-champagne">Friends Foundation</span>, it is a special blessing to celebrate the 7th wedding from FF Home.
                 </p>
                 <p>
                   Every step of this journey is a testimony of God's unconditional love and faithfulness.
@@ -135,18 +169,28 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
                   With thankful hearts and joyful spirits, we invite you to be part of our beautiful beginning.
                 </p>
               </div>
+
+              {/* Scripture Promise & Gratitude - Perfectly balances the Sisters card in Column 1 */}
+              <div className="my-2 p-3.5 sm:p-4 rounded-xl bg-gradient-to-br from-rose/10 via-cream-soft/60 to-olive/10 dark:from-midnight-elevated/80 dark:via-midnight-card dark:to-midnight-elevated/80 border border-rose/25 dark:border-midnight-border text-center shadow-xs">
+                <p className="font-serif italic text-xs sm:text-sm text-plum dark:text-darktext-primary font-medium leading-relaxed">
+                  “The Lord has done great things for us, and we are filled with joy.”
+                </p>
+                <span className="text-[0.62rem] sm:text-[0.68rem] uppercase tracking-widest text-rose dark:text-champagne font-bold font-sans mt-1.5 block">
+                  — Psalm 126:3 —
+                </span>
+              </div>
             </div>
 
-            {/* Praise & Signature */}
-            <div className="mt-6 pt-4 border-t border-rose/20 dark:border-midnight-border/70">
+            {/* Praise & Signature - Centered, Balanced, Generous clearance without overlap */}
+            <div className="mt-4 pt-3.5 border-t border-rose/20 dark:border-midnight-border/70 text-center">
               <p className="font-serif text-sm sm:text-base font-semibold text-rose dark:text-champagne mb-2">
                 ✨ All glory to God! ✨
               </p>
-              <div>
-                <span className="font-champagne text-2xl sm:text-3xl text-plum dark:text-champagne block leading-normal">
-                  ~ Mercy Havilah
+              <div className="flex flex-col items-center justify-center">
+                <span className="font-champagne text-3xl sm:text-4xl text-plum dark:text-champagne block leading-normal">
+                  ~ Mercy Havilah ~
                 </span>
-                <span className="text-[0.68rem] uppercase tracking-widest text-plum-soft dark:text-darktext-muted font-bold font-sans">
+                <span className="text-[0.68rem] uppercase tracking-[0.25em] text-plum-soft dark:text-darktext-muted font-bold font-sans block mt-3">
                   The Bride
                 </span>
               </div>

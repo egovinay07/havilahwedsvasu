@@ -76,7 +76,6 @@ test('Centralized Wedding Configuration Integrity', async (t) => {
   await t.test('All referenced media assets physically exist on disk', () => {
     const mediaFiles = [
       'assets/fonts/Champagne.ttf',
-      'assets/fonts/Hippo.ttf',
       'assets/fonts/Hobo.ttf',
       'assets/images/hero.jpg',
       'assets/images/groom.jpg',

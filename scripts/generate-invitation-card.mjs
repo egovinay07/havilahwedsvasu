@@ -59,12 +59,25 @@ async function generate() {
   const galleryBase64 = fs.readFileSync(galleryPath).toString('base64');
   const imageSrc = `data:image/jpeg;base64,${galleryBase64}`;
 
+  const champagnePath = path.join(ROOT, 'assets/fonts/Champagne.ttf');
+  if (!fs.existsSync(champagnePath)) {
+    throw new Error('Champagne.ttf does not exist at ' + champagnePath);
+  }
+  const champagneBase64 = fs.readFileSync(champagnePath).toString('base64');
+
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap');
+
+  @font-face {
+    font-family: 'Champagne';
+    src: url('data:font/ttf;base64,${champagneBase64}') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   
@@ -174,20 +187,22 @@ async function generate() {
   }
 
   .title-couple {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 1.05;
+    font-family: 'Champagne', 'Cormorant Garamond', cursive, serif;
+    font-size: 76px;
+    font-weight: normal;
+    line-height: 1.15;
     color: #FFFFFF;
     letter-spacing: 0.02em;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.5);
   }
   .ampersand {
-    font-style: italic;
-    font-weight: 400;
+    font-family: 'Champagne', 'Cormorant Garamond', cursive, serif;
+    font-style: normal;
+    font-weight: normal;
     color: #E6C594;
-    margin: 0 10px;
-    font-size: 46px;
+    margin: 0 16px;
+    font-size: 60px;
   }
 
   .divider-line {
@@ -262,7 +277,7 @@ async function generate() {
 
     <!-- Left Arch Portrait -->
     <div class="photo-frame">
-      <img src="${imageSrc}" alt="Vasu & Mercy Havilah">
+      <img src="${imageSrc}" alt="Mercy Havilah & Vasu">
       <div class="photo-glow"></div>
     </div>
 
@@ -270,7 +285,7 @@ async function generate() {
     <div class="text-column">
       <div class="cross">✝</div>
       <div class="eyebrow">Holy Matrimony Invitation</div>
-      <h1 class="title-couple">VASU <span class="ampersand">&amp;</span> MERCY HAVILAH</h1>
+      <h1 class="title-couple">Mercy Havilah <span class="ampersand">&amp;</span> Vasu</h1>
       
       <div class="divider-line"></div>
       
