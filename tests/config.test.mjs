@@ -77,6 +77,7 @@ test('Centralized Wedding Configuration Integrity', async (t) => {
     const mediaFiles = [
       'assets/fonts/Champagne.ttf',
       'assets/fonts/Hippo.ttf',
+      'assets/fonts/Hobo.ttf',
       'assets/images/hero.jpg',
       'assets/images/groom.jpg',
       'assets/images/bride.jpg',

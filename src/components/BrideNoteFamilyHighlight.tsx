@@ -31,7 +31,7 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
             <span>Friends Foundation Family &amp; Bride's Note</span>
             <Sparkles className="w-3.5 h-3.5" />
           </div>
-          <h3 className="font-hippo uppercase text-2xl sm:text-3xl md:text-4xl font-normal text-plum dark:text-darktext-primary tracking-wide leading-tight py-1">
+          <h3 className="font-hobo uppercase text-2xl sm:text-3xl md:text-4xl font-normal text-plum dark:text-darktext-primary tracking-wide leading-tight py-1">
             FRIENDS FOUNDATION FAMILY
           </h3>
           <div className="w-16 h-[1.5px] bg-rose/40 dark:bg-champagne/40 mx-auto my-3" />
@@ -76,7 +76,7 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
 
               {/* Photo Caption Card - Attached directly below the photo */}
               <div className="mt-3.5 p-3.5 sm:p-4 rounded-xl bg-rose/5 dark:bg-midnight-elevated/50 border border-rose/15 dark:border-midnight-border text-center shadow-xs">
-                <h4 className="font-hippo uppercase text-base sm:text-lg md:text-xl font-normal text-plum dark:text-darktext-primary tracking-wide leading-snug py-0.5">
+                <h4 className="font-hobo uppercase text-base sm:text-lg md:text-xl font-normal text-plum dark:text-darktext-primary tracking-wide leading-snug py-0.5">
                   FRIENDS FOUNDATION FAMILY
                 </h4>
                 <p className="font-serif italic text-xs sm:text-sm text-plum-muted dark:text-darktext-secondary mt-1.5 leading-relaxed">
@@ -101,8 +101,10 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
           <div className="lg:col-span-6 flex flex-col justify-between p-5 sm:p-8 rounded-2xl bg-white/80 dark:bg-midnight-card/90 border border-rose/20 dark:border-midnight-border shadow-sm text-center">
             <div>
               {/* Note Badge */}
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/25 dark:border-champagne/35 text-[0.68rem] font-bold uppercase tracking-widest text-rose dark:text-champagne mb-3">
-                <Heart className="w-3 h-3 fill-current" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/25 dark:border-champagne/35 text-[0.68rem] font-bold uppercase tracking-widest text-rose dark:text-champagne mb-3">
+                <Heart className="w-3 h-3 fill-current text-rose dark:text-champagne" />
+                <span className="font-hobo text-xs sm:text-sm tracking-wide normal-case text-rose dark:text-champagne font-normal">Friends Foundation</span>
+                <span className="opacity-40">·</span>
                 <span>A Special Note from the Bride</span>
               </div>
 
@@ -124,7 +126,7 @@ export const BrideNoteFamilyHighlight: React.FC<BrideNoteFamilyHighlightProps> =
                   “A little girl who grew up surrounded by love, care, and prayers is now stepping into a beautiful new chapter of life.”
                 </p>
                 <p>
-                  As the eldest girl of Friends Foundation, it is a special blessing to celebrate the 7th wedding from FF Home.
+                  As the eldest girl of <span className="font-hobo tracking-wide text-rose dark:text-champagne font-normal text-base sm:text-lg">Friends Foundation</span>, it is a special blessing to celebrate the 7th wedding from FF Home.
                 </p>
                 <p>
                   Every step of this journey is a testimony of God's unconditional love and faithfulness.

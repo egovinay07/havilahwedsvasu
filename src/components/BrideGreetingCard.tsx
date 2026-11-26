@@ -18,7 +18,9 @@ export const BrideGreetingCard: React.FC<BrideGreetingCardProps> = ({ className 
       <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-rose dark:via-champagne to-transparent" />
 
       {/* Pill Badge */}
-      <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/30 dark:border-champagne/40 text-[0.68rem] sm:text-xs font-bold uppercase tracking-widest text-rose dark:text-champagne mb-3">
+      <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose/10 dark:bg-champagne/15 border border-rose/30 dark:border-champagne/40 text-[0.68rem] sm:text-xs font-bold uppercase tracking-widest text-rose dark:text-champagne mb-3">
+        <span className="font-hobo normal-case tracking-wide text-xs sm:text-sm font-normal text-rose dark:text-champagne">Friends Foundation</span>
+        <span className="opacity-40">·</span>
         <span>A Special Note from the Bride</span>
       </div>
 
@@ -41,7 +43,7 @@ export const BrideGreetingCard: React.FC<BrideGreetingCardProps> = ({ className 
           “A little girl who grew up surrounded by love, care, and prayers is now stepping into a beautiful new chapter of life.”
         </p>
         <p>
-          As the eldest girl of Friends Foundation, it is a special blessing to celebrate the 7th wedding from FF Home.
+          As the eldest girl of <span className="font-hobo tracking-wide text-rose dark:text-champagne font-normal text-base sm:text-lg md:text-xl">Friends Foundation</span>, it is a special blessing to celebrate the 7th wedding from FF Home.
         </p>
         <p>
           Every step of this journey is a testimony of God's unconditional love and faithfulness.

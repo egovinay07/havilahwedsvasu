@@ -21,8 +21,21 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Hobo';
+    src: url('../assets/fonts/Hobo.ttf') format('truetype'),
+         url('/assets/fonts/Hobo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .font-hobo {
+    font-family: 'Hobo', 'Hippo', cursive, sans-serif;
+  }
+
   .font-hippo {
-    font-family: 'Hippo', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Hobo', 'Hippo', 'Cormorant Garamond', Georgia, serif;
     text-transform: uppercase;
   }
 
