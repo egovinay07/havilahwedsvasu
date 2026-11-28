@@ -49,9 +49,9 @@ class SimpleCDP {
 }
 
 async function generate() {
-  console.log('--- Generating WhatsApp Invitation Card from gallery-1.jpg ---');
+  console.log('--- Generating WhatsApp Invitation Card from gallery-2.jpg (Formal Stage Portrait) ---');
 
-  const galleryPath = path.join(ROOT, 'assets/images/gallery-1.jpg');
+  const galleryPath = path.join(ROOT, 'assets/images/gallery-2.jpg');
   if (!fs.existsSync(galleryPath)) {
     throw new Error('gallery-1.jpg does not exist at ' + galleryPath);
   }
