@@ -2,7 +2,7 @@
 CHRISTIAN WEDDING INVITATION WEBSITE - PROJECT SUMMARY
 Couple: Mercy Havilah weds Vasu
 Live URL: https://havilahwedsvasu.vercel.app/
-Repository: https://github.com/rvinay07/havilahwedsvasu (main)
+Repository: https://github.com/egovinay07/havilahwedsvasu (main)
 ================================================================================
 
 1. MAJOR CHANGES
